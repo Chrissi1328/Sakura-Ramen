@@ -57,7 +57,7 @@
     font-family: "Economica", sans-serif;
     font-weight: 700;
     font-size: 56px;
-    text-align: center;
+    text-align: left;
 }
 
 .span{
@@ -85,7 +85,7 @@ font-family: "Raleway", sans-serif;
     top: 0;
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-left: 160px;
     margin-right: 160px;
@@ -117,7 +117,9 @@ font-family: "Raleway", sans-serif;
     margin-top: 64px;
     margin-bottom: 120px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 .noodle{
@@ -125,7 +127,6 @@ font-family: "Raleway", sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 160px;
 }
 
 .broth{
@@ -140,45 +141,61 @@ font-family: "Raleway", sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 160px;
 }
 
 .our-menu{
     background-image: url(./assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
 }
 
+.imgs{
+    margin-left: 160px;
+}
+
+.img2{
+    margin-right: 160px;
+}
+
 .tonkotsu{
     display: flex;
-    justify-content: space-evenly;
-    margin-left: 160px;
-    margin-right: 160px;
+    align-items: center;
 }
 
 .Spicy-Miso{
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
     flex-direction: row-reverse;
     margin-top: 56px;
-    margin-left: 160px;
-    margin-right: 160px;
 }
 
 .shio{
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
     margin-top: 56px;
     padding-bottom: 120px;
-    margin-left: 160px;
-    margin-right: 160px;
 }
 
 .dish-info{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 32px;
-    margin-left: 80px;
     border-spacing: 8px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    margin-left: 80px;
+}
+
+.dish-info2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    border-spacing: 8px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    margin-right: 80px;
 }
 
 .tabel{
@@ -196,11 +213,11 @@ font-family: "Raleway", sans-serif;
 
 .footer{
     width: 100%;
-    height: 144px;
+    height: 134px;
     background-color: #0A141E;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -216,7 +233,9 @@ font-family: "Raleway", sans-serif;
 }
 
 .maps{
+    display: flex;
     margin-top: 64px;
+    gap: 10px;
 }
 
 
@@ -252,7 +271,7 @@ font-family: "Raleway", sans-serif;
 
 <div>
     <div>
-        <h2 id="h2" class="headline-ourmenu">HOW TO ORDER</h2>
+        <h2 id="h2">HOW TO ORDER</h2>
     </div>
 
     <div class="order">
@@ -277,10 +296,10 @@ font-family: "Raleway", sans-serif;
     </div>
     <div class="tonkotsu">
     <div>
-        <img src="./assets/img/3_section_our_menu/Png/R1.png" alt="" width="352px" height="352px">
+        <img class="imgs" src="./assets/img/3_section_our_menu/Png/R1.png" alt="" width="352px" height="352px">
     </div>
-    <div>
-        <table class="dish-info">
+    <div class="dish-info">
+        <table>
             <caption id="h3">Tonkotsu Ramen</caption>
             <tr class="tabel">
                 <td>CHICKEN</td>
@@ -300,10 +319,10 @@ font-family: "Raleway", sans-serif;
 
 <div class="Spicy-Miso">
     <div>
-       <img src="./assets/img/3_section_our_menu/Png/R2.png" alt="" width="352px" height="352px">
+       <img class="img2" src="./assets/img/3_section_our_menu/Png/R2.png" alt="" width="352px" height="352px">
     </div>
     <div>
-        <table class="dish-info">
+        <table class="dish-info2">
             <caption id="h3">Spicy Miso Ramen</caption>
             <tr class="tabel">
                 <td>CHICKEN</td>
@@ -323,10 +342,10 @@ font-family: "Raleway", sans-serif;
 
 <div class="shio">
     <div>
-        <img class="img3" src="./assets/img/3_section_our_menu/Png/R3.png" alt="" width="352px" height="352px">
+        <img class="imgs" src="./assets/img/3_section_our_menu/Png/R3.png" alt="" width="352px" height="352px">
     </div>
-    <div>
-        <table class="dish-info">
+    <div class="dish-info">
+        <table>
             <caption id="h3">Shio Ramen</caption>
             <tr class="tabel">
                 <td>CHICKEN</td>
